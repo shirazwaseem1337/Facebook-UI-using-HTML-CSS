@@ -1,0 +1,166 @@
+body {
+  margin: 10px;
+  background-color: rgba(214, 195, 195, 0.753);
+  overflow: scroll;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.fb-logo {
+  width: 15rem;
+  height: 20rem;
+  margin-left: 6.8rem;
+  margin-top: 1.5rem;
+}
+
+.fb-text {
+  margin-left: -13.5rem;
+  margin-top: 13.9rem;
+
+  font-size: 1.4375rem;
+  clear: right;
+}
+
+#box {
+  width: 19.5rem;
+  height: 17.5rem;
+  background: white;
+  border-radius: 8px;
+  float: right;
+  margin-top: 7rem;
+  margin-right: 8rem;
+  clear: right;
+  box-shadow: 0 0 5px grey;
+}
+
+.text {
+  line-height: 1.5;
+  border-radius: 8px;
+  color: silver;
+}
+
+input[type="email"] {
+  border: 0.9px rgba(180, 180, 180, 0.5) solid;
+  width: 280px;
+  line-height: 3;
+  margin: 12px 10px;
+  padding: 0px 6px;
+  outline: none;
+}
+
+input[type="Password"] {
+  border: 0.9px rgba(180, 180, 180, 0.5) solid;
+  margin: 1.5px 10px;
+  width: 280px;
+  line-height: 3;
+  padding: 0px 6px;
+  outline: none;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border: 0.9px solid #1877f2;
+  box-shadow: 0px 0px 2px #1877f2;
+}
+
+::placeholder {
+  opacity: 0.8;
+}
+
+#login-button {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #1877f2;
+  color: white;
+  text-align: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 11px;
+  border-radius: 6px;
+  margin-top: 10px;
+  display: block;
+}
+
+#forget-button {
+  display: block;
+  color: #1877f2;
+  font-size: 14px;
+  text-align: center;
+  padding: 17px;
+  text-decoration: none;
+}
+
+hr {
+  width: 90%;
+  opacity: 0.4;
+  margin-top: 5px;
+}
+
+#account {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #42b72a;
+  padding: 9.5px;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  border-radius: 6px;
+  margin-top: -3px;
+}
+
+#line {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 33px;
+
+  color: black;
+}
+
+#button {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+#button:hover,
+#button:focus {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .fb-text {
+    text-align: center;
+    font-size: 1.4375rem;
+    margin: -32px -12px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .fb-logo {
+    margin: -113px 0px -98px 135px;
+    padding-top: 4px;
+  }
+  #box {
+    margin: 32px 22px 47px 106px;
+    padding: 0px 0px 0px 0px;
+  }
+}
